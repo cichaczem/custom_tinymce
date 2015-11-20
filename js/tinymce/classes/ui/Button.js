@@ -161,6 +161,10 @@ define("tinymce/ui/Button", [
 				self.classes.toggle('btn-has-text', !!text);
 			}
 
+			self.on('click', function() {
+				self.classes.toggle("btn-active");
+			});
+
 			self.state.on('change:text', function(e) {
 				setButtonText(e.value);
 			});
