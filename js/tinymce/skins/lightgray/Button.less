@@ -1,7 +1,6 @@
 // Button
 
 .@{prefix}-btn {
-	color: red;
 	border: 1px solid mix(rgb(red(@btn-border-right), green(@btn-border-right), blue(@btn-border-right)), @panel-bg, 30%);
 	border-color: @btn-border-top @btn-border-right @btn-border-bottom @btn-border-left;
 	position: relative;
@@ -33,7 +32,7 @@
 	&:active {
 		.vertical-gradient(darken(@btn-bg, 7%), darken(@btn-bg-hlight, 5%));
 		.box-shadow(@btn-box-shadow-active);
-		border-color: blue;
+		border-color: @btn-border-active;
 
 	}
 }
@@ -87,6 +86,12 @@
 .@{prefix}-primary button, .@{prefix}-primary button i {
 	color: @btn-primary-text;
 	text-shadow: 1px 1px @btn-primary-text-shadow;
+}
+
+.@{prefix}-btn .@{prefix}-txt {
+	font-size: inherit;
+	line-height: inherit;
+	color: inherit;
 }
 
 .@{prefix}-btn-large button {
