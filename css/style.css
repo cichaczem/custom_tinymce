@@ -1,0 +1,10 @@
+body {
+  background-color: #333;
+  font-family: georgia;
+}
+
+.page {
+  width: 54rem;
+  margin: 0 auto;
+  background-color: white;
+}
