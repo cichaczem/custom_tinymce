@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Snipsl Writer tool</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/tinymce/tinymce.js"></script>
+    <script>
+      tinymce.init(
+        {
+          selector: '#editor',
+          menubar: false,
+          statusbar: false,
+          autoresize_min_height: 500,
+          plugins: [
+            "lists preview fullscreen autoresize"
+          ],
+          toolbar: 'bold italic fullscreen'
+        }
+      );
+    </script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="page">
+        <textarea id="editor"></textarea>
+      </div>
+    </div>
+  </body>
+</html>
